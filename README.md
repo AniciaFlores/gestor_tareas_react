@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Aplicación de Gestión de Tareas con React
+---
+Grupo # 9
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desarrolladores: 
+Anicia E. Flores C. y 
+Felipe Exequiel Ocampo 
 
-## Available Scripts
+Correo Electrónico: redactorweboficial@gmail.com
+exeocampo1994@gmail.com
 
-In the project directory, you can run:
+GitHub: 
+https://github.com/AniciaFlores
+https://github.com/FelipeOcampo22
 
-### `npm start`
+Esta aplicación web pertenece al Proyecto Final Integrador del Curso de React de 'Argentina Programa' en conjunto con la UNT. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Esta App, desarrollada en React, permite gestionar una lista de tareas de manera sencilla. Utiliza componentes funcionales, el hook `useState` para el manejo del estado, el hook `useEffect` para realizar efectos secundarios, y eventos para interactuar con el usuario.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Componentes
 
-### `npm test`
+### Componentes Funcionales
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Componente de Lista de Tareas (TaskList):
+- Muestra la lista de tareas.
+- Recibe la lista de tareas como propiedades, así como funciones para gestionar eventos relacionados con las tareas (marcar como completada, eliminar, etc.).
+- Cada tarea se representa mediante un componente `TaskItem`.
 
-### `npm run build`
+#### Componente de Tarea (TaskItem):
+- Representa individualmente una tarea.
+- Muestra el nombre de la tarea y un botón para completarla.
+- Utiliza el estado local para gestionar la apariencia de la tarea (por ejemplo, tachado cuando está completada).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Componente de Formulario (TaskForm):
+- Contiene un formulario para agregar nuevas tareas.
+- Utiliza el estado local para gestionar la entrada del usuario y envía la nueva tarea a la lista principal.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Estado con `useState`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Estado Principal (tasks):
+- Utiliza el hook `useState` en el componente principal para gestionar el estado de la lista de tareas.
+- Cada tarea es un objeto con propiedades como id, nombre, y completada.
 
-### `npm run eject`
+### Efectos con `useEffect`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Efecto de Actualización (`useEffect` en el componente principal):
+- Utiliza `useEffect` para realizar una acción (por ejemplo, mostrar un mensaje) cuando el estado de la lista de tareas cambia.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Interacción con el Usuario - Eventos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Eventos en Componente de Lista (TaskList):
+- Implementa eventos que permiten al usuario interactuar con cada tarea (marcar, desmarcar como completada, eliminar, deshacer o editar).
+- Estos eventos modifican el estado principal (tasks).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Eventos en Componente de Formulario (TaskForm):
+- Implementa eventos para gestionar la entrada del usuario y agregar nuevas tareas a la lista. Las nuevas tareas se agregan abajo.
 
-## Learn More
+### Estilo y Diseño
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Aplicamos estilos CSS básico.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Puntos Extra (Opcionales)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Implementamos la persistencia de datos utilizando `localStorage` para que las tareas persistan incluso después de recargar la página.
 
-### Analyzing the Bundle Size
+## Instrucciones de Instalación y Ejecución
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clona este repositorio.
+2. Navega a la carpeta del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias.
+4. Ejecuta `npm start` para iniciar la aplicación.
+5. Abre tu navegador y visita `http://localhost:3000`.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
