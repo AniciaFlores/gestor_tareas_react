@@ -1,0 +1,197 @@
+/* TaskItem.css */
+.task-item {
+    list-style-type: none;
+    margin-bottom: 8px;
+    margin-right: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item {
+    list-style-type: none;
+    margin-bottom: 8px;
+    margin-right: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-container {
+    flex-grow: 1;
+    overflow: hidden;
+    margin-right: 8px; /* Aquí qgruegué un margen para evitar que el texto se superponga al botón */
+  }
+  
+  
+  .task-text {
+    white-space: nowrap; /* Evitar saltos de línea */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para texto truncado */
+  }
+  
+  .completed-text {
+    text-decoration: line-through;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .complete-button,
+  .delete-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .complete-button.completed {
+    text-decoration: none;
+  }
+  
+  .complete-button:hover {
+    background-color: #08f213;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    margin-left: 8px;
+  }
+  
+  .delete-button:hover {
+    background-color: rgb(247, 162, 93);
+  }
+  
+  .task-item:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .task-text {
+    white-space: nowrap; /* Evita saltos de línea */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Muesstra puntos suspensivos (...) para texto truncado */
+  }
+  
+  .completed-text {
+    text-decoration: line-through;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .complete-button,
+  .delete-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .complete-button.completed {
+    text-decoration: none;
+  }
+  
+  .complete-button:hover {
+    background-color: #08f213;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    margin-left: 8px;
+  }
+  
+  .delete-button:hover {
+    background-color: rgb(247, 162, 93);
+  }
+  
+  .task-item:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  .edit-button {
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 5px; 
+  }
+  .button-container {
+    display: flex;
+    gap: 8px; 
+  }
+  
+  .complete-button,
+  .delete-button,
+  .edit-button,
+  .save-button,
+  .cancel-button {
+    /* Estilos comunes para todos los botones */
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .complete-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .edit-button {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .save-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Estilos para pantallas más pequeñas*/
+  @media only screen and (max-width: 600px) {
+    .button-container {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  }

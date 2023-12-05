@@ -1,4 +1,6 @@
+// TaskForm.js
 import React, { useState } from 'react';
+import './TaskForm.css';
 
 function TaskForm({ onAddTask }) {
   const [newTask, setNewTask] = useState('');
@@ -14,15 +16,20 @@ function TaskForm({ onAddTask }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Nueva tarea"
-        value={newTask}
-        onChange={handleInputChange}
-      />
-      <button type="submit">Agregar</button>
-    </form>
+    <div className="task-form-container">
+      <form className="task-form" onSubmit={handleSubmit}>
+        <input
+          className="task-input"
+          type="text"
+          placeholder="Nueva tarea"
+          value={newTask}
+          onChange={handleInputChange}
+        />
+        <button className="add-button" type="submit" disabled={!newTask}>
+          Agregar
+        </button>
+      </form>
+    </div>
   );
 }
 
