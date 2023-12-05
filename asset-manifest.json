@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gestor_tareas_react/static/css/main.beae6dde.css",
+    "main.js": "/gestor_tareas_react/static/js/main.96ba0ac3.js",
+    "static/js/787.3d350cd9.chunk.js": "/gestor_tareas_react/static/js/787.3d350cd9.chunk.js",
+    "index.html": "/gestor_tareas_react/index.html",
+    "main.beae6dde.css.map": "/gestor_tareas_react/static/css/main.beae6dde.css.map",
+    "main.96ba0ac3.js.map": "/gestor_tareas_react/static/js/main.96ba0ac3.js.map",
+    "787.3d350cd9.chunk.js.map": "/gestor_tareas_react/static/js/787.3d350cd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.beae6dde.css",
+    "static/js/main.96ba0ac3.js"
+  ]
+}
